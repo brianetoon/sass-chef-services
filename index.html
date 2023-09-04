@@ -5,41 +5,59 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chef Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/main.scss">
   </head>
   <body>
 
-    <section class="section | bg-neutral-200 clr-neutral-900 text-center">
-      <header class="section-heading">
-        <h2 class="fs-800">This is a section title</h2>
-        <p class="fs-600 uppercase">This is the section subtitle</p>
-      </header>
-      <p>Lorem ipsum dolor sit.</p>
-      <p>Nisi rem perferendis consequuntur.</p>
-      <p>Voluptas in possimus dolor.</p>
-    </section>
+    <header class="primary-header | bg-neutral-900 margin-block-start-24">
+      <img src="assets/logo.svg" alt="Chef John Wellington" class="logo | mx-auto">
+      <nav class="primary-nav | margin-block-start-24">
+        <ul class="flex-group mx-auto">
+          <li><a href="#about">About</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="section | bg-neutral-900 clr-neutral-200 text-center">
-      <header class="section-heading" data-decoration="true">
-        <h2 class="fs-800">This is a section title</h2>
-        <p class="fs-600 uppercase">This is the section subtitle</p>
-      </header>
-      <p>Lorem ipsum dolor sit.</p>
-      <p>Nisi rem perferendis consequuntur.</p>
-      <p>Voluptas in possimus dolor.</p>
-    </section>
+    <main>
+      <section class="hero | bg-neutral-900 clr-neutral-100 text-center">
+        <div class="container">
 
-    <section class="section | bg-neutral-200 clr-neutral-900 text-center">
-      <header class="section-heading">
-        <h2 class="fs-800">This is a section title</h2>
-        <!-- <p class="fs-600 uppercase">This is the section subtitle</p> -->
-      </header>
-      <div class="even-columns">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ut molestias optio sequi beatae dicta doloremque at temporibus error voluptatibus.</p>
-        <p>Culpa rerum ratione porro, ab inventore accusantium. Necessitatibus numquam, sit ut tempore placeat voluptas sapiente dolor culpa, corporis minus quae.</p>
-        <p>Minus quibusdam illo at culpa iusto doloribus accusamus veniam molestias blanditiis impedit eaque pariatur, non rem hic dolore id recusandae.</p>
-      </div>
-    </section>
+          <h1 class="fs-900 ff-accent margin-block-end-48">Homecooked meals delivered straight to your door</h1>
+          <div class="flex-group mx-auto">
+            <button class="button" data-type="primary">Place Order</button>
+            <a href="#about" class="button" data-type="outline">More Info</a>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <img class="shift-up box-shadow-1" src="assets/about.jpg" alt="">
+            </div>
+            <div class="flow">
+              <header class="section-header">
+                <h2 class="fs-800 ff-accent clr-primary-500">Amazing food without the hassle</h2>
+                <p class="fs-600 uppercase">We do all the work, so all you have to do is sit back and enjoy</p>
+              </header>
+              <p class="lead">It's ready to go</p>
+              <p>Whether it's for a romantic evening with your significant other or if you're hosting a large party and need food for a big group, we're here to help!</p>
+              <p>We can cater to whatever your needs are, and ensure that our delicious food is delivered at the perfect moment, fresh, hot and ready to eat exactly when you need it to be there.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer></footer>
 
   </body>
 </html>
