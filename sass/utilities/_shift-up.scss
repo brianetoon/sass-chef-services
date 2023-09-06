@@ -1,0 +1,5 @@
+@use "../abstracts/" as *;
+
+.shift-up {
+  margin-block-start: (calc($section-padding * -1.6));
+}
