@@ -8,11 +8,10 @@
     display: flex;
     align-items: center;
     padding: $card-body-padding;
+    position: relative;
   }
 
-  &[data-type="testimonial"] .card__body {
-    position: relative;
-
+  &[data-type="testimonial"] &__body {
     &::after {
       content: "\201C";
       font-family: $ff-accent;
